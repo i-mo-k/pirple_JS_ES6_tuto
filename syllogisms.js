@@ -1,10 +1,9 @@
-const men = ["Socrates", "Obama", "Zeus"];
-
 const isAMan = (name) => {
+    const men = ["Socrates", "Obama", "Zeus"];
     return (men.includes(name));
 }
-const isChocolate = (cake) => {
-    return (cake.flavour === "chocolate");
+const getFlavour = (cake) => {
+    return cake.flavour;
 }
 
 const executeManSyllogism = (person) => {
@@ -20,17 +19,20 @@ const executeManSyllogism = (person) => {
     console.log(message);
 }
 
-const executeFlavourSyllogism = (cake) => {
-    const premise = "This cake is either vanilla or chocolate.\n";
+const executeFlavourSyllogism = (flavours, isChocolate) => {
+    flavMaxIndex = flavours.length - 1;
+    allButLastFlavour = flavours.slice(0, flavMaxIndex).join(", ");
+    lastFlavour = flavours[flavMaxIndex];
+    const premise = "This cake is either " + [allButLastFlavour, lastFlavour].join(" or ") + ".\n";
     let message = premise;
-    if (isChocolate(cake)) {
+    if (isChocolate) {
         message += "This cake is chocolate.\n" + 
             "Therefore this cake is not vanilla.";
     } else {
         message += "This cake is not chocolate.\n" + 
             "Therefore this cake is vanilla.";
     }
-    console.log(message);
+    return message;
 }
 
 let person = "Socrates";
@@ -38,6 +40,6 @@ executeManSyllogism(person);
 person = "Venus";
 executeManSyllogism(person);
 
-const cakes = [{flavour: "chocolate"}, {flavour: "chocolate"}, {flavour: "vanilla"}];
-executeFlavourSyllogism(cakes[0]);
-executeFlavourSyllogism(cakes[2]);
+const flavours = ["chocolate", "vanilla"];
+console.log(executeFlavourSyllogism(flavours, true));
+console.log(executeFlavourSyllogism(flavours, false));
