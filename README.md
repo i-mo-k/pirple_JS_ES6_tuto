@@ -11,3 +11,6 @@ This file is about percieving the differences between the classical var keyword 
 
 ## syllogism.js
 This file is about using if statements to express syllogisms.
+
+## timeAdder.js
+This file is about usign switch statements to perform time related additions. This seems really chanllenging, as the requirements vary alot and input may be very flexible.
