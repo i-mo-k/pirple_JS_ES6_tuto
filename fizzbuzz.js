@@ -24,6 +24,6 @@ const messageForInt = (value) => {
     }
 }
 
-for (var i = 1; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     console.log(messageForInt(i));
 }
