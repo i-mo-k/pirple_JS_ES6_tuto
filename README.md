@@ -14,3 +14,6 @@ This file is about using if statements to express syllogisms.
 
 ## timeAdder.js
 This file is about usign switch statements to perform time related additions. This seems really chanllenging, as the requirements vary alot and input may be very flexible.
+
+## fizzbuzz.js
+This file contains homework for looping data structures.
