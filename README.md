@@ -13,7 +13,11 @@ This file is about percieving the differences between the classical var keyword 
 This file is about using if statements to express syllogisms.
 
 ## timeAdder.js
-This file is about usign switch statements to perform time related additions. This seems really chanllenging, as the requirements vary alot and input may be very flexible.
+This file is about usign switch statements to perform time related additions. This was slightly chanllenging, as the requirements vary alot and input may be very flexible.
 
 ## fizzbuzz.js
 This file contains homework for looping data structures.
+
+## dom directory
+This folder contains 3 files for the homework related to DOM elements : js, css, and html file. Caution will be brought to where each piece of data and instructions  should be placed. among all 3 files.
+it seems to be a good recap of everything I learned so far.
