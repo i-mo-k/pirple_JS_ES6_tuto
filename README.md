@@ -21,3 +21,6 @@ This file contains homework for looping data structures.
 ## dom directory
 This folder contains 3 files for the homework related to DOM elements : js, css, and html file. Caution will be brought to where each piece of data and instructions  should be placed. among all 3 files.
 it seems to be a good recap of everything I learned so far.
+
+## tic tac toe
+This homework was designed to assess the understanding of events (what a fun !!! ^^). Everything is stored in the tictactoe directory.
